@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kayıt Formu</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding-left: 30%;
+        background-color: #b4cf66;
+      }
+      .içerik {
+        display: inline;
+      }
+      fieldset {
+        background-color: #5db355;
+        width: 600px;
+        height: 230px;
+        margin-top: 20px;
+        text-align: left;
+      }
+      fieldset:hover {
+        transform: scale(
+          1.1
+        ); /*resim üzerine gelince içeri doğru bir küçülme olacak*/
+        transition: 0.2s; /*içeri doğru küçülmenin ne kadar saniyede gerçekleştirmesi için*/
+      }
+      legend {
+        text-align: center;
+        font-size: 28px;
+      }
+
+      label {
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="içerik">
+      <div class="üst">
+        <h1>İş Başvuru Kayıt Formu</h1>
+        <p>Lütfen aşağıdaki formu doldurunuz..</p>
+      </div>
+
+      <form action="#">
+        <fieldset>
+          <legend>Kişsel Bilgiler</legend>
+          <br /><br />
+          <label for="ad_soyad"> Ad ve soyadınız:</label>
+          <input type="text" /> <br /><br />
+          <label for="doğum tarihi">Doğum tarihi::</label>
+          <input type="date" /><br /><br />
+          <label for="cinsiyet"> Cinsiyet:</label>
+          <label for="kız">kız:</label>
+          <input type="radio" name="cinsiyet" />
+          <label for="erkek">erkek:</label>
+          <input type="radio" name="cinsiyet" />
+        </fieldset>
+
+        <fieldset>
+          <legend>İletişim Bilgileri</legend>
+          <br />
+          <label for="adres">Adres:</label>
+          <input type="text" /><br /><br />
+          <label for="telefon">Telefon(1):</label>
+          <input type="tel" /><br /><br />
+          <label for="telefon2">Telefon(2):</label>
+          <input type="tel" /><br /><br />
+          <label for="e_posta">e-posta:</label>
+          <input type="email" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Eğitim</legend>
+          <br /><br />
+          <label for="seviye">Eğitim seviyeniz:</label>
+          <select name="seviye" id="">
+            <option value="0">ilk okul</option>
+            <option value="1">orta okul</option>
+            <option value="2">ön lisans</option>
+            <option value="3">lisans</option>
+            <option value="4">yüksek lisans</option>
+          </select>
+          <br /><br />
+
+          <label for="mezun">Mezun durmunuz: </label>
+          <select name="mezun_durumu" id="">
+            <option value="0">mezun</option>
+            <option value="1">devam</option>
+          </select>
+          <br /><br />
+
+          <label for="okul_adi">Okul adi: </label>
+          <input type="text" /> <br /><br />
+          <label for="bolum">Bölüm: </label>
+          <input type="text" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Tecrübeler</legend>
+          <label for="alan">ilgilenilen alanlar:</label><br />
+
+          <label for="web">WEB Tasarım:</label>
+          <input type="checkbox" name="" id="" />
+          <label for="oyun">Oyun Programlama:</label>
+          <input type="checkbox" name="" id="" />
+          <label for="yapay">Yapay Zeka:</label>
+          <input type="checkbox" name="" id="" />
+          <label for="gömülü">Gömülü Sistem:</label>
+          <input type="checkbox" name="" id="" />
+          <label for="robotik">Robotik:</label>
+          <input type="checkbox" name="" id="" /> <br /><br />
+          <label for="tecrube"
+            >İlgilendiğiniz alandaki tecrübelerinizi açıklayınız:</label
+          >
+          <br />
+          <br />
+          <textarea cols="70" rows="5"></textarea>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
